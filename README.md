@@ -39,6 +39,5 @@ The following guide will help you download the project to the local machine, com
 
 ## Acknowledgement
 
-* Cheung Cheuk Yiu - Design the animations
 * [CircleProgress](https://github.com/lzyzsd/CircleProgress) - Button animation
 * [android-morphing-button](https://github.com/dmytrodanylyk/android-morphing-button) - Button animation
