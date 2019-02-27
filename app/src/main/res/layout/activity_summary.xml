@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kirosc.mathisfun.SummaryActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/correct_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/correct_answer"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/incorrect_tv"
+        app:layout_constraintEnd_toEndOf="@+id/incorrect_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/incorrect_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/incorrect_answer"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/givenUp_tv"
+        app:layout_constraintEnd_toEndOf="@+id/givenUp_tv"
+        app:layout_constraintTop_toBottomOf="@+id/correct_tv" />
+
+    <TextView
+        android:id="@+id/givenUp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/given_up_question"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/restart_btn"
+        app:layout_constraintEnd_toEndOf="@+id/incorrect_tv"
+        app:layout_constraintEnd_toStartOf="@+id/givenUpNo_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrect_tv" />
+
+    <com.dd.morphingbutton.MorphingButton
+        android:id="@+id/restart_btn"
+        android:layout_width="@dimen/nextButton_width"
+        android:layout_height="@dimen/uniformButton_height"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/restart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/givenUp_tv" />
+
+    <TextView
+        android:id="@+id/correctNo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/incorrectNo_tv"
+        app:layout_constraintTop_toTopOf="@+id/correct_tv"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/incorrectNo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/givenUpNo_tv"
+        app:layout_constraintTop_toTopOf="@+id/incorrect_tv"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/givenUpNo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/givenUp_tv"
+        app:layout_constraintTop_toTopOf="@+id/givenUp_tv"
+        tools:text="3" />
+</android.support.constraint.ConstraintLayout>

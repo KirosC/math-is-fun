@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Math Is Fun</string>
+    <!-- For MainActivity -->
+    <string name="question_no">Q%1$d</string>
+    <string name="textInput_hint">Enter your answer here</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <!-- Correct answer speech -->
+    <string name="correct_speech">Correct!</string>
+    <!-- Incorrect answer speech -->
+    <string name="incorrect_speech">Incorrect! The answer is</string>
+    <!-- Skip the question speech -->
+    <string name="answer_speech">The answer is</string>
+
+    <!-- For SummaryActivity -->
+    <string name="summary_speech">The number of correct answer is %1$d. The number of incorrect answer is %2$d. The number of given up question is %3$d.</string>
+    <string name="correct_answer">Correct answer:</string>
+    <string name="incorrect_answer">Incorrect answer:</string>
+    <string name="given_up_question">Given up question:</string>
+    <string name="restart">Restart</string>
+</resources>
